@@ -51,7 +51,7 @@ set whichwrap+=<,>,h,l
 
 "# Commands
 "Remove trailing whitespaces
-map <Leader>T :%s/\s\+$//<CR>i
+map <Leader>, :%s/\s\+$//<CR>i
 
 syntax on
 filetype plugin indent on
