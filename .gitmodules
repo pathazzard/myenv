@@ -7,3 +7,6 @@
 [submodule "vimsetup/.vim/bundle/evernote"]
 	path = vimsetup/.vim/bundle/evernote
 	url = https://github.com/kakkyz81/evervim.git
+[submodule "vimsetup/.vim/bundle/mustache"]
+	path = vimsetup/.vim/bundle/mustache
+	url = git://github.com/juvenn/mustache.vim.git
