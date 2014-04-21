@@ -2,6 +2,7 @@ call pathogen#infect()
 
 " Set no max file limit
 let g:ctrlp_max_files = 0
+let g:ctrlp_show_hidden = 1
 
 let mapleader=","           "Changes Leader key into a comma instead of a backslash
 
@@ -9,7 +10,7 @@ set nocompatible            "Prefents VIM from being nerfed into acting like VI
 set history=2000
 
 set wildmenu
-set wildignore=.svn,CVS,.git,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,tmp/**
+set wildignore=.svn,CVS,.git,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,tmp/**,vendor/**
 
 " Visual Options
 set laststatus=2        " Always Show The Status Bar
