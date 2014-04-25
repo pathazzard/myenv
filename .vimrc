@@ -60,6 +60,9 @@ set whichwrap+=<,>,h,l
 " Commands
 "   Remove trailing whitespaces
 map <Leader>, :%s/\s\+$//<CR>
+au BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
+map <Leader>' :s/\'\(.*\)\'/\"\1\"<CR>
+map <Leader>" :s/\"\(.*\)\"/\'\1\'<CR>
 
 " Enable mouse in terminal if possible.
 if has("mouse")
