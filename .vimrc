@@ -78,8 +78,6 @@ endif
 " Syntax stuffs
 syntax on
 filetype plugin indent on
-au BufRead,BufNewFile *.tpl set filetype=smarty
-au BufRead,BufNewFile *.php set tags=~/tags
 au FileType ruby set tabstop=2 | set shiftwidth=2 | set softtabstop=2
 
 " Add local vim concerns
