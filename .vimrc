@@ -1,4 +1,3 @@
-call pathogen#infect()
 set nocompatible            "Prefents VIM from being nerfed into acting like VI
 
 " Set no max file limit
