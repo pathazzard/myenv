@@ -1,7 +1,5 @@
-myenv
-=====
+dots
+====
 
-My work environment.
-
-- Contains .vim config
+Install to homedir with `stow home`
 
