@@ -1,4 +1,21 @@
-set nocompatible            "Prefents VIM from being nerfed into acting like VI
+" init.vim
+"
+" nvim (neovim) configuration file
+
+" set nocompatible in case we end up on a machine that only has vim
+set nocompatible
+
+" plugins: see https://github.com/junegunn/vim-plug
+call plug#begin('~/.local/share/nvim/plugged')
+
+Plug 'tpope/vim-fugitive'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/vim-easy-align'
+Plug 'majutsushi/tagbar'
+Plug 'vim-syntastic/syntastic'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+
+call plug#end()
 
 " Set no max file limit
 let g:ctrlp_max_files = 0
@@ -9,6 +26,8 @@ let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
 " ag is fast enough that CtrlP doesn't need to cache
 let g:ctrlp_use_caching = 0
+
+nmap <F8> :TagbarToggle<CR>
 
 let mapleader=","           "Changes Leader key into a comma instead of a backslash
 

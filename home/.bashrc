@@ -15,7 +15,7 @@ shopt -s checkwinsize
 # env #########################################################################
 
 # default editor
-export EDITOR=vim
+export EDITOR=nvim
 
 # enable 256-color support in TMUX sessions
 [ -n "$TMUX" ] && export TERM=screen-256color
@@ -44,7 +44,8 @@ alias ls="ls --color=auto"
 alias tmux="tmux -u"
 alias :q="exit"
 alias shh='ssh'
+alias vim='nvim'
 
 # custom git prompt ###########################################################
 # relies on bash-completion to set __git_ps1
-source ~/.bash_prompt
+source ~/.local/share/bash/bash_prompt.sh
