@@ -14,6 +14,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'majutsushi/tagbar'
 Plug 'vim-syntastic/syntastic'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+Plug 'vim-php/tagbar-phpctags.vim'
 
 call plug#end()
 

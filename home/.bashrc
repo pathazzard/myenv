@@ -38,6 +38,10 @@ fi
 [ -d ~/.config/bash.d ] && \
     for sh in ~/.config/bash.d/*; do source $sh; done
 
+# ~/bin
+[ -d ~/bin ] && \
+    export PATH=$HOME/bin:$PATH
+
 # aliases #####################################################################
 alias grep="grep --color=auto"
 alias ls="ls --color=auto"
