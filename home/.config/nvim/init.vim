@@ -97,7 +97,9 @@ endif
 " Syntax stuffs
 syntax on
 filetype plugin indent on
-au FileType ruby set tabstop=2 | set shiftwidth=2 | set softtabstop=2
+
+" Ruby is very slow with relativenumber and cursorline so disable those
+au FileType ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2 norelativenumber nocursorline foldmethod=manual
 
 " Add local vim concerns
 if filereadable($HOME.'/.vimrc_local')
