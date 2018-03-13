@@ -24,10 +24,18 @@ export EDITOR=nvim
 [ -f /usr/share/bash-completion/bash_completion ] && \
     source /usr/share/bash-completion/bash_completion
 
-# bash-completion osx relies on brew
+# stuff for osx
 if [ "$(uname)" = "Darwin" ]; then
+
+    # bash-completion osx relies on brew
     [ -f $(brew --prefix)/etc/bash_completion ] && \
         source $(brew --prefix)/etc/bash_completion
+
+    # bsd ls color flag
+    alias ls='ls -G'
+else
+    # hopefully we're in linux
+    alias ls='ls --color=auto'
 fi
 
 # push nodebrew bin to PATH if installed
@@ -44,7 +52,6 @@ fi
 
 # aliases #####################################################################
 alias grep="grep --color=auto"
-alias ls="ls --color=auto"
 alias tmux="tmux -u"
 alias :q="exit"
 alias shh='ssh'
